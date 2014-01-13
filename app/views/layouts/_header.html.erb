@@ -33,13 +33,13 @@
 					</ul>
 				</li>
 				<li>
-					<%=link_to("Influencers", url_for(:controller => "site", :action => "influencers"), :html => {:class => (params[:controller] == 'site' && params[:action] == 'influencers' ? "active" : "")})%>
+					<%=link_to("Influencers", url_for(:controller => "site", :action => "influencers"), :class => (params[:controller] == 'site' && params[:action] == 'influencers' ? "active" : ""))%>
 				</li>
 				<li>
-					<%=link_to("Trends", url_for(:controller => "site", :action => "conversation"), :html => {:class => (params[:controller] == 'site' && params[:action] == 'conversation' ? "active" : "")})%>
+					<%=link_to("Trends", url_for(:controller => "site", :action => "conversation"), :class => (params[:controller] == 'site' && params[:action] == 'conversation' ? "active" : ""))%>
 				</li>
 				<li>
-					<%=link_to("Timeline", url_for(:controller => "site", :action => "timeline"), :html => {:class => (params[:controller] == 'site' && params[:action] == 'timeline' ? "active" : "")})%>
+					<%=link_to("Timeline", url_for(:controller => "site", :action => "timeline"), :class => (params[:controller] == 'site' && params[:action] == 'timeline' ? "active" : ""))%>
 				</li>
 				<li class="dropdown">
 					<a href="" class="dropdown-toggle for_vatar" data-toggle="dropdown"> <span class="avatar" style="background-image: url(<%= image_path("icon/default_avatar.png")%>);"> </span> <b class="caret"></b> </a>
