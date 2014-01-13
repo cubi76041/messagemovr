@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-MessageMovr::Application.config.secret_key_base = '427dd29b3ff719b87d25c0ab3d3135b4537f92cbc3a0a37561c5ee1471785842949400a4333320498094701659c99e7ef428bade399c4d8b4f9d62755b54e589'
+Messagemovr::Application.config.secret_key_base = '6e7a788407e0cde92d250069f7e785559b79e20b19d19f2d1510571223b72e09b230b7c320bdb343cdf9bf5a467b119f0afaffada52d1147db3f00e0c838bbc7'

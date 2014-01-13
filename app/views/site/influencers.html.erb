@@ -10,7 +10,7 @@
 	<tbody>
 		<%@influencers.each do |influencer|%>
 		<tr>
-			<td class="col-md-5 clearfix">
+			<td class="col-md-6 clearfix">
 				<div class="avatar">
 					<img class="img-circle" src="<%=influencer[:avatar]%>" />
 				</div>
@@ -23,10 +23,10 @@
 			</td>
 			<td class="col-md-2"><%=influencer[:mscore]%></td>
 			<td class="col-md-2"><%=influencer[:followers]%></td>
-			<td class="clearfix">
-				<div class="google_plus btn_action">&nbsp;</div>
-				<div class="send_email btn_action"></div>
-				<div class="twitter btn_action"></div>
+			<td class="col-md-2 clearfix">
+				<a href="#"><div class="google_plus btn_action"></div></a>
+				<a href="#"><div class="send_email btn_action"></div></a>
+				<a href="#"><div class="twitter btn_action"></div></a>
 			</td>
 		</tr>
 		<% end %>

@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-MessageMovr::Application.load_tasks
+Messagemovr::Application.load_tasks
