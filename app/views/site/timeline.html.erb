@@ -1,0 +1,21 @@
+<table class="table table-no-border" id="timeline">
+	<tbody>
+		<%@timelines.each do |timeline|%>
+		<tr>
+			<td class="col-md-10 clearfix">
+				<div class="avatar">
+					<img class="img-circle" src="<%=timeline[:avatar]%>" />
+				</div>
+				<div class="profile">
+					<div class="name">
+						<a href="#" class="fullname"><%=timeline[:fullname]%></a> <span class="username">@<%=timeline[:username]%></span>
+					</div>
+					<div class="tweet-text"><%=timeline[:tweet_message].html_safe%></div>
+				</div>
+			</td>
+			<td class="col-md-2 text-right"><%=timeline[:time]%></td>
+			<td></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

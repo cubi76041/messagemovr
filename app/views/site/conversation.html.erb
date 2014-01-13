@@ -1,0 +1,18 @@
+<table class="table table-no-border" id="conversation">
+	<thead>
+		<tr>
+			<th>Target</th>
+			<th>Mscore</th>
+			<th>Count</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%@targets.each do |target|%>
+		<tr>
+			<td><%=target[:target]%></td>
+			<td><%=target[:mscore]%></td>
+			<td><%=target[:count]%></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

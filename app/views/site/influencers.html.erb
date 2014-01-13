@@ -1,0 +1,30 @@
+<table class="table table-no-border" id="influencers">
+	<thead>
+		<tr>
+			<th>Influence</th>
+			<th>Mscore</th>
+			<th>Followers</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<%@influencers.each do |influencer|%>
+		<tr>
+			<td class="col-md-5 clearfix">
+				<div class="avatar">
+					<img class="img-circle" src="<%=influencer[:avatar]%>" />
+				</div>
+				<div class="profile">
+					<div class="name">
+						<a href="#" class="fullname"><%=influencer[:fullname]%></a> <span class="username">@<%=influencer[:username]%></span>
+					</div>
+					<div class="bio"><%=influencer[:bio].html_safe%></div>
+				</div>
+			</td>
+			<td class="col-md-2"><%=influencer[:mscore]%></td>
+			<td class="col-md-2"><%=influencer[:followers]%></td>
+			<td></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

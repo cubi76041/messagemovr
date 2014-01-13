@@ -1,0 +1,167 @@
+<!-- Cac modal Login-->
+<div class="modal" id="login_modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<form role="form" action="" method="post" id="frm_login">
+
+				<div class="modal-header">
+				
+					<button type="button" class="close hide" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button> 
+					<div class="form-group login_top_padding">
+						<h1 class="modal-title">Login</h1>
+					</div> 
+					 
+				</div>
+
+				<div class="modal-body">
+
+					<div class="form-group">
+						<label for="inputEmail1">Email address</label>
+						<input type="email" name="email" class="form-control" id="inputEmail1" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label for="inputPassword1">Password</label>
+						<input type="password" name="password" class="form-control" id="inputPassword1" placeholder="Password">
+					</div>
+
+					<div class="alert alert-block alert-danger hide">
+						<button type="button" class="close" onclick="$(this).parent().removeClass('in').addClass('hide');">
+							&times;
+						</button>
+						<h4>Oh snap! You got an error!</h4>
+						<div id="error_messages"></div>
+					</div>
+
+				</div>
+
+				<div class="modal-footer">
+					<button type="submit" name="submit" class="btn btn-primary loginsubmit btn-full btn-lg">
+						Submit
+					</button>
+					<div class="row">
+						<a class="left link_show_forgotpass" href="/change_password">Forgot password?</a>
+						<a class="link_show_signup right" href="#">Sign Up</a>
+					</div>
+				</div>
+			</form>
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- End modal Login-->
+
+<!-- Cac modal Sign up-->
+<div class="modal" id="signup_modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form role="form" action="" method="post" id="frm_signup">
+				<input type="hidden" name="user_type" value="2" class="form-control" id="user_type">
+
+				<div class="modal-header">
+				
+					<button type="button" class="close hide" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+<!--
+					<h1 class="modal-title">Hello.</h1>
+-->
+				 <div class="form-group login_top_padding">
+						<h1 class="modal-title">Sign Up</h1>
+					</div> 
+				</div>
+				<div class="modal-body">
+
+					<div class="form-group">
+						<label for="supplier_company_name">Company name</label>
+						<input type="text" name="supplier_company_name" class="form-control" id="supplier_company_name" placeholder="Company name">
+					</div>
+
+					<div class="form-group">
+						<label for="inputYourName">Your name</label>
+						<input type="text" name="full_name" class="form-control" id="inputYourName" placeholder="Your name">
+					</div>
+					<div class="form-group">
+						<label for="inputEmail1">Email address</label>
+						<input type="email" name="email" class="form-control" id="inputEmail2" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label for="inputPassword1">Password</label>
+						<input type="password" name="password" class="form-control" id="inputPassword2" placeholder="Password">
+					</div>
+
+					<div class="alert alert-block alert-danger hide">
+						<button type="button" class="close"  onclick="$(this).parent().removeClass('in').addClass('hide');">
+							&times;
+						</button>
+						<h4>Oh snap! You got an error!</h4>
+						<div id="error_messages"></div>
+					</div>
+
+				</div>
+
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary signupsubmit btn-full btn-lg">
+						Submit
+					</button>
+					
+					<div class="row">
+						<span style="margin-right: 5px">Already a member?</span>
+						<a class="link_show_login" href="#"><span class="icon_lock"></span>Sign in</a>
+					</div>
+
+					
+
+
+				</div>
+			</form>
+
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- End modal Sign up-->
+
+
+<!-- Cac modal Fogot pass-->
+<div class="modal" id="fogotpass_modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form role="form" action="" method="post" id="frm_fogotpass">
+				<div class="modal-header"></div>
+				<div class="modal-body">
+
+					<div class="form-group">
+						<h1 class="modal-title">Forgot Password</h1>
+						<p>
+							Please enter your email address below. We will send you an email to confirm your password.
+						</p>
+					</div>
+
+					<div class="form-group">
+						<label for="inputEmail3">Email address</label>
+						<input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
+					</div>
+
+					<div class="alert alert-block alert-danger hide">
+						<button type="button" class="close"  onclick="$(this).parent().removeClass('in').addClass('hide');">
+							&times;
+						</button>
+						<h4>Oh snap! You got an error!</h4>
+						<div id="error_messages"></div>
+					</div>
+
+				</div>
+
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary signupsubmit btn-full btn-lg fogotpasssubmit">
+						Submit
+					</button>
+
+				</div>
+			</form>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- End modal Fogot-->
