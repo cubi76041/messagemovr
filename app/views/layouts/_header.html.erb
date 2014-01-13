@@ -42,7 +42,7 @@
 					<%=link_to("Timeline", url_for(:controller => "site", :action => "timeline"), :class => (params[:controller] == 'site' && params[:action] == 'timeline' ? "active" : ""))%>
 				</li>
 				<li class="dropdown">
-					<a href="" class="dropdown-toggle for_vatar" data-toggle="dropdown"> <span class="avatar" style="background-image: url(<%= image_path("icon/default_avatar.png")%>);"> </span> <b class="caret"></b> </a>
+					<a href="" class="dropdown-toggle for_vatar" data-toggle="dropdown"> <span class="avatar" style="background-image: url(<%= image_path("icon/default_avatar.png?" + rand())%>);"> </span> <b class="caret"></b> </a>
 					<ul class="dropdown-menu">
 
 						<li>
