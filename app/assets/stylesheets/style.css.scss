@@ -205,9 +205,10 @@ a:focus {
 }
 .table.table-no-border > thead > tr > th {
   border: none;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: normal;
   padding-bottom: 15px;
+  color: #333;
 }
 .table.table-no-border > tbody > tr > td {
   border: none;
@@ -1140,7 +1141,10 @@ a img {
     color: #ffa501;
   }
   #influencers .action {
-    padding: 0px 42px;
+    padding: 15px 32px;
+  }
+  #influencers.table .profile .bio {
+    color: #999;
   }
 #influencers .btn_action {
   width: 30px;
