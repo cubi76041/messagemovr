@@ -8,6 +8,10 @@
   font-family: goods-headline-font;
   src: font-url('MyriadPro-Light.otf');
 }
+@font-face {
+  font-family: robo-thin;
+  src: font-url('Roboto-Thin.ttf');
+}
 
 $modal-backdrop-bg: #EEEEEE;
 
@@ -279,6 +283,9 @@ a:hover {
   display: inline-block;
   border-radius: 18px;
   vertical-align: middle;
+}
+#header_bar_menu .navbar-nav li a.active {
+  color: #ffa501;
 }
 .navbar-default .navbar-nav > li > a.for_vatar{
   padding:0;
@@ -1118,15 +1125,15 @@ a img {
     float: left;
     margin-right: 20px;
   }
-  #influencers.table .profile,#timeline.table .profile {
+  #influencers.table .profile, #timeline.table .profile {
     float: left;
-    width: 500px;
+    width: 430px;
   }
   #timeline.table .profile {
     width: 885px;
   }
   #influencers.table .profile .name .fullname,#timeline.table .profile .name .fullname {
-    font-weight: bold;
+    color: #333;
   }
   #influencers.table .profile .name .username,#timeline.table .profile .name .username {
     color: #ffa501;
@@ -1157,4 +1164,7 @@ a img {
 }
 #influencers .twitter:hover {
   background-position: -5px -4px;
+}
+#influencers.table .mscore, #influencers.table .followers {
+  font-size: 23px;
 }

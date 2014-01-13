@@ -80,5 +80,8 @@ class ApplicationController < ActionController::Base
         ]
       },
     ]
+    
+    #last topic here
+    @last_topic = @header_categories[0][:submenu][3]
   end
 end

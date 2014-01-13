@@ -1,10 +1,10 @@
 <table class="table table-no-border" id="influencers">
 	<thead>
 		<tr>
-			<th>Influence</th>
-			<th>Mscore</th>
-			<th>Followers</th>
-			<th>Action</th>
+			<th>Influencer</th>
+			<th class="text-center">MScore</th>
+			<th class="text-center">Followers</th>
+			<th class="text-center">Action</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -21,9 +21,9 @@
 					<div class="bio"><%=influencer[:bio].html_safe%></div>
 				</div>
 			</td>
-			<td class="col-md-2"><%=influencer[:mscore]%></td>
-			<td class="col-md-2"><%=influencer[:followers]%></td>
-			<td class="col-md-2 clearfix">
+			<td class="col-md-2 text-center mscore"><%=number_with_delimiter(influencer[:mscore])%></td>
+			<td class="col-md-2 text-center followers"><%=number_with_delimiter(influencer[:followers])%></td>
+			<td class="col-md-2 text-center clearfix">
 				<a href="#"><div class="google_plus btn_action"></div></a>
 				<a href="#"><div class="send_email btn_action"></div></a>
 				<a href="#"><div class="twitter btn_action"></div></a>

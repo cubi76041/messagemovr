@@ -14,7 +14,7 @@
 
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Explore<b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle <%="active" if params[:controller] == 'site' && params[:action] == 'topic'%>" data-toggle="dropdown">Topic: <%=@last_topic%><b class="caret"></b></a>
 					<ul class="dropdown-menu">
 						<% @header_categories.each do |category| %>
 						<li class="<%= "dropdown-submenu" if category[:submenu].any?%>">
@@ -33,16 +33,16 @@
 					</ul>
 				</li>
 				<li>
-					<%=link_to("Conversation", url_for(:controller => "site", :action => "conversation"))%>
+					<%=link_to("Influencers", url_for(:controller => "site", :action => "influencers"), :html => {:class => (params[:controller] == 'site' && params[:action] == 'influencers' ? "active" : "")})%>
 				</li>
 				<li>
-					<%=link_to("Influencers", url_for(:controller => "site", :action => "influencers"))%>
+					<%=link_to("Trends", url_for(:controller => "site", :action => "conversation"), :html => {:class => (params[:controller] == 'site' && params[:action] == 'conversation' ? "active" : "")})%>
 				</li>
 				<li>
-					<%=link_to("Timeline", url_for(:controller => "site", :action => "timeline"))%>
+					<%=link_to("Timeline", url_for(:controller => "site", :action => "timeline"), :html => {:class => (params[:controller] == 'site' && params[:action] == 'timeline' ? "active" : "")})%>
 				</li>
 				<li class="dropdown">
-					<a href="" class="dropdown-toggle for_vatar" data-toggle="dropdown"> <span class="avatar" style="background-image: url(<%= image_path("icon/default_avatar.png")%>);background-size: 100% 100%;"> </span> <b class="caret"></b> </a>
+					<a href="" class="dropdown-toggle for_vatar" data-toggle="dropdown"> <span class="avatar" style="background-image: url(<%= image_path("icon/default_avatar.png")%>);"> </span> <b class="caret"></b> </a>
 					<ul class="dropdown-menu">
 
 						<li>

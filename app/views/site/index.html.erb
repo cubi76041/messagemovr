@@ -10,21 +10,23 @@
 	}
 	#main .index_container .signup_with_twitter {
 		font-size: 25px;
+		padding: 10px 40px;
+		font-family: robo-thin;
 	}
 </style>
 <div class="index_container clearfix">
 	<div class="col-md-6 text-center">
 		<img src="<%= image_path "36_clu_map.png"%>" style="width: 800px" />
 	</div>
-	<div class="col-md-6 text-center" style="padding: 250px 0px;">
+	<div class="col-md-6 text-center" style="padding: 250px 100px;">
 		<div>
-			<h1 class="welcome_message">Welcome to MessageMovr!</h1>
+			<h1 class="welcome_message">MessageMovr</h1>
 		</div>
 		<div class="form-group description">
 			<h2>Identify and engage with the influencers who matter most to you.</h2>
 		</div>
 		<div class="form-group">
-			<a href="<%=url_for(:controller => "site", :action => "main")%>"><input type="button" class="btn btn-primary btn-lg button-tall signup_with_twitter" value="Sign up with Twitter" /></a>
+			<a href="<%=url_for(:controller => "site", :action => "main")%>"><input type="button" class="btn btn-primary btn-lg button-tall signup_with_twitter" value="Sign in with Twitter" /></a>
 		</div>
 		<div><a href="javascript: void()" id="signup_with_email">or with email</a></div>
 	</div>
