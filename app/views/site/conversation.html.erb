@@ -2,16 +2,16 @@
 	<thead>
 		<tr>
 			<th>Target</th>
-			<th class="text-align">MScore</th>
-			<th class="text-align">Count</th>
+			<th class="text-center">MScore</th>
+			<th class="text-center">Count</th>
 		</tr>
 	</thead>
 	<tbody>
 		<%@targets.each do |target|%>
 		<tr>
 			<td><%=target[:target]%></td>
-			<td class="text-align"><%=number_with_delimiter(target[:mscore])%></td>
-			<td class="text-align"><%=number_with_delimiter(target[:count])%></td>
+			<td class="text-center"><%=number_with_delimiter(target[:mscore])%></td>
+			<td class="text-center"><%=number_with_delimiter(target[:count])%></td>
 		</tr>
 		<% end %>
 	</tbody>
